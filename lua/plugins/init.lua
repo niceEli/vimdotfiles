@@ -17,8 +17,17 @@ return {
     "github/copilot.vim",
     
     lazy = false
-  }
+  },
 
+  "NvChad/nvcommunity",
+  { import = "nvcommunity.git.diffview" },
+  { import = "nvcommunity.git.neogit" },
+  { import = "nvcommunity.git.lazygit" },
+  { import = "nvcommunity.tools.telescope-fzf-native" },
+  { import = "nvcommunity.diagnostics.errorlens" },
+  { import = "nvcommunity.editor.autosave" },
+  { import = "nvcommunity.lsp.mason-lspconfig" },
+  { import = "nvcommunity.lsp.barbecue" }
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
