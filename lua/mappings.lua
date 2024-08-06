@@ -50,6 +50,8 @@ map('n', '<Space>Bd', '<Cmd>BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>Bl', '<Cmd>BufferOrderByLanguage<CR>', opts)
 map('n', '<Space>Bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 
+map('n', '<space>lg', '<Cmd>LazyGit<CR>', opts)
+
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
