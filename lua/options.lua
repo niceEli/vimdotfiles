@@ -4,3 +4,7 @@ require "nvchad.options"
 
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
+
+if vim.g.neovide then
+  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h14" -- text below applies for VimScript
+end
