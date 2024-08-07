@@ -32,6 +32,11 @@ return {
   },
 
   {
+    "andweeb/presence.nvim",
+    lazy = false,
+  },
+
+  {
     "tiagovla/scope.nvim",
     lazy = false,
     hooks = {
