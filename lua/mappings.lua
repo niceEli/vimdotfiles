@@ -41,15 +41,17 @@ map('n', '<A-c>', '<Cmd>BufferClose<CR>', { noremap = true, silent = true, desc 
 --                 :BufferCloseBuffersLeft
 --                 :BufferCloseBuffersRight
 -- Magic buffer-picking mode
-map('n', '<Space>Bp', '<Cmd>BufferPick<CR>', { noremap = true, silent = true, desc = 'Quick Switch Buffer' })
+map('n', '<leader>Bp', '<Cmd>BufferPick<CR>', { noremap = true, silent = true, desc = 'Quick Switch Buffer' })
 -- Sort automatically by...
-map('n', '<Space>Bb', '<Cmd>BufferOrderByBufferNumber<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Number' })
-map('n', '<Space>Bn', '<Cmd>BufferOrderByName<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Name' })
-map('n', '<Space>Bd', '<Cmd>BufferOrderByDirectory<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Dir' })
-map('n', '<Space>Bl', '<Cmd>BufferOrderByLanguage<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Lang' })
-map('n', '<Space>Bw', '<Cmd>BufferOrderByWindowNumber<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Window Number' })
+map('n', '<leader>Bb', '<Cmd>BufferOrderByBufferNumber<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Number' })
+map('n', '<leader>Bn', '<Cmd>BufferOrderByName<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Name' })
+map('n', '<leader>Bd', '<Cmd>BufferOrderByDirectory<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Dir' })
+map('n', '<leader>Bl', '<Cmd>BufferOrderByLanguage<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Lang' })
+map('n', '<leader>Bw', '<Cmd>BufferOrderByWindowNumber<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Window Number' })
 
-map('n', '<space>lg', '<Cmd>LazyGit<CR>', { noremap = true, silent = true, desc = 'LazyGit' })
+map('n', '<leader>lg', '<Cmd>LazyGit<CR>', { noremap = true, silent = true, desc = 'LazyGit' })
+
+map('v', '<leader>ss', '<Cmd>CarbonNow<CR>', { noremap = true, silent = true, desc = 'Screenshot Code' })
 
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)

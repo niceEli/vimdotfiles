@@ -37,6 +37,14 @@ return {
   },
 
   {
+    "ellisonleao/carbon-now.nvim",
+    lazy = true,
+    cmd = "CarbonNow",
+    ---@param opts cn.ConfigSchema
+    opts = { [[ your custom config here ]] }
+  },
+  
+  {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {

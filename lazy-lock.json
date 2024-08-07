@@ -5,6 +5,7 @@
   "barbar.nvim": { "branch": "master", "commit": "53b5a2f34b68875898f0531032fbf090e3952ad7" },
   "barbecue.nvim": { "branch": "main", "commit": "d38a2a023dfb1073dd0e8fee0c9be08855d3688f" },
   "base46": { "branch": "v2.5", "commit": "e5287518acb015c7b7604b4b0cc62670f23a4c57" },
+  "carbon-now.nvim": { "branch": "main", "commit": "f13c3c611a6aa22cca028bfe2cec63c7f67f2c87" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "39e2eda76828d88b773cc27a3f61d2ad782c922d" },
   "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },
