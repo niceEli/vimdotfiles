@@ -31,6 +31,20 @@ return {
     opts = overrides.nvimtree,
   },
 
+  {
+    "tiagovla/scope.nvim",
+    lazy = false,
+    hooks = {
+      pre_tab_leave = function()
+        vim.api.nvim_exec_autocmds('User', {pattern = 'ScopeTabLeavePre'})
+      end,
+  
+      post_tab_enter = function()
+        vim.api.nvim_exec_autocmds('User', {pattern = 'ScopeTabEnterPost'})
+      end,
+    },
+  },
+
   -- config for this stolen from https://github.com/romgrk/barbar.nvim
   {
     'romgrk/barbar.nvim',
@@ -41,7 +55,9 @@ return {
     init = function() vim.g.barbar_auto_setup = false end,
     opts = {
       -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-      -- animation = true,
+      animation = true,
+      auto_hide = true,
+      no_name_title = "Untitled",
       -- insert_at_start = true,
       -- …etc.
     },

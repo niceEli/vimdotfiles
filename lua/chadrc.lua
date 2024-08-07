@@ -13,4 +13,10 @@ M.base46 = {
 	-- },
 }
 
+M.ui = {
+	statusline = {
+		theme = "vscode_colored"
+	}
+}
+
 return M
