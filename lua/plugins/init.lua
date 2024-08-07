@@ -21,6 +21,12 @@ return {
   },
 
   {
+    "hiphish/rainbow-delimiters.nvim",
+    
+    lazy = false
+  },
+  
+  {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
