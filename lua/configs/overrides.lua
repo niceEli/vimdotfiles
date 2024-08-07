@@ -14,6 +14,9 @@ M.nvimtree = {
     full_name = true,
     group_empty = true,
   },
+  diagnostics = {
+    enable = true,
+  },
 }
 
 return M
