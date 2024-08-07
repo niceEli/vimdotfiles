@@ -13,6 +13,40 @@ return {
       require "configs.lspconfig"
     end,
   },
+  
+  {
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    lazy = false,
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "alex",
+        "bash-language-server",
+        "clangd",
+        "codelldb",
+        "cpptools",
+        "css-lsp",
+        "docker-compose-language-service",
+        "dockerfile-language-server",
+        "emmet-language-server",
+        "gitlab-ci-ls",
+        "glow",
+        "html-lsp",
+        "js-debug-adapter",
+        "json-lsp",
+        "jsonlint",
+        "markdownlint",
+        "prettier",
+        "prettierd",
+        "rust-analyzer",
+        "snyk",
+        "stylua",
+        "typescript-language-server",
+        "yaml-language-server",
+      },
+      auto_update = true,
+    }
+  },
 
   {
     "github/copilot.vim",
