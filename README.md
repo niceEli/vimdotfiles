@@ -18,7 +18,8 @@ I daily drive this
 ### Steps
 
 1. Clone this repo to your local machine
-2. Open nvim and run `:Mason`/`:MasonInstallAll`
+2. Open neovim (`nvim`)
+3. Enjoy, your plugins and Mason packages will be installed automatically
 
 #### UNIX
 
