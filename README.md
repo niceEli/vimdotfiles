@@ -18,7 +18,7 @@ I daily drive this
 ### Steps
 
 1. Clone this repo to your local machine
-2. Open nvim and run `:MasonInstall`/`:MasonInstallAll`
+2. Open nvim and run `:Mason`/`:MasonInstallAll`
 
 #### UNIX
 
