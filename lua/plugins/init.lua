@@ -1,3 +1,4 @@
+local overrides = require "configs.overrides"
 return {
   {
     "stevearc/conform.nvim",
@@ -17,6 +18,11 @@ return {
     "github/copilot.vim",
     
     lazy = false
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvimtree,
   },
 
   -- config for this stolen from https://github.com/romgrk/barbar.nvim
