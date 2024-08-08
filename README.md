@@ -9,11 +9,11 @@ I daily drive this
 ### Prerequisites
 
 (idk fully about tho)
-- Neovim 0.5+
+- Neovim 0.10+
 - git
 - nodejs
 - npm
-- fzf
+- cargo/rust
 
 ### Steps
 
