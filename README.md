@@ -11,7 +11,7 @@ I daily drive this
 (idk fully about tho)
 - Neovim 0.10+
 - git
-- nodejs
+- some sort of unzip program like gz or 7z
 - npm
 - cargo/rust
 
