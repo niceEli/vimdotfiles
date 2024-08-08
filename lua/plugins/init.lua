@@ -1,4 +1,5 @@
 local overrides = require "configs.overrides"
+local masonInstalled = require "configs.mason"
 return {
   {
     "stevearc/conform.nvim",
@@ -18,44 +19,13 @@ return {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     lazy = false,
     opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "alex",
-        "bash-language-server",
-        "clangd",
-        "codelldb",
-        "cpptools",
-        "css-lsp",
-        "docker-compose-language-service",
-        "dockerfile-language-server",
-        "emmet-language-server",
-        "gitlab-ci-ls",
-        "glow",
-        "html-lsp",
-        "js-debug-adapter",
-        "json-lsp",
-        "jsonlint",
-        "markdownlint",
-        "prettier",
-        "prettierd",
-        "rust-analyzer",
-        "snyk",
-        "stylua",
-        "typescript-language-server",
-        "yaml-language-server",
-      },
+      ensure_installed = masonInstalled,
       auto_update = true,
     }
   },
 
   {
     "github/copilot.vim",
-    
-    lazy = false
-  },
-
-  {
-    "hiphish/rainbow-delimiters.nvim",
     
     lazy = false
   },
@@ -66,16 +36,9 @@ return {
   },
 
   {
-    "andweeb/presence.nvim",
-    lazy = false,
-  },
-
-  {
     "ellisonleao/carbon-now.nvim",
     lazy = true,
     cmd = "CarbonNow",
-    ---@param opts cn.ConfigSchema
-    opts = { [[ your custom config here ]] }
   },
   
   {
