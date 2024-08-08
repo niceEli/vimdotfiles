@@ -9,7 +9,6 @@ local M = {
   "docker-compose-language-service",
   "dockerfile-language-server",
   "emmet-language-server",
-  "gitlab-ci-ls",
   "glow",
   "html-lsp",
   "js-debug-adapter",
