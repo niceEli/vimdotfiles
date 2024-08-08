@@ -23,5 +23,6 @@ local M = {
   "stylua",
   "typescript-language-server",
   "yaml-language-server",
+  "python-lsp-server",
 }
 return M
