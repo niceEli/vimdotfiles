@@ -36,6 +36,19 @@ return {
   },
 
   {
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+    dependencies = {
+      -- You will not need this if you installed the
+      -- parsers manually
+      -- Or if the parsers are in your $RUNTIMEPATH
+      "nvim-treesitter/nvim-treesitter",
+
+      "nvim-tree/nvim-web-devicons"
+    }
+  },
+
+  {
     "ellisonleao/carbon-now.nvim",
     lazy = true,
     cmd = "CarbonNow",
@@ -128,14 +141,15 @@ return {
   { import = "nvcommunity.diagnostics.errorlens" },
   { import = "nvcommunity.editor.autosave" },
   { import = "nvcommunity.lsp.mason-lspconfig" },
-  { import = "nvcommunity.lsp.barbecue" }
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  { import = "nvcommunity.lsp.barbecue" },
+  
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+      "vim", "lua", "vimdoc",
+      "html", "css"
+      },
+    },
+  },
 }

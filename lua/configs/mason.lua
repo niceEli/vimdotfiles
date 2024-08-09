@@ -23,5 +23,7 @@ local M = {
   "typescript-language-server",
   "yaml-language-server",
   "python-lsp-server",
+  "ast-grep",
+  "markuplint",
 }
 return M

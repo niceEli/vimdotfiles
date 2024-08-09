@@ -8,7 +8,6 @@ I daily drive this
 
 ### Prerequisites
 
-(idk fully about tho)
 - Neovim 0.10+
 - git
 - some sort of unzip program like gz or 7z
