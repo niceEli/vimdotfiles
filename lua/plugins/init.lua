@@ -36,6 +36,12 @@ return {
   },
 
   {
+    "rmarinn/codetime.nvim",
+    lazy = false,
+    opts = {} -- this is required so that setup() would be called
+  },
+
+  {
     "OXY2DEV/markview.nvim",
     lazy = false,
     dependencies = {
