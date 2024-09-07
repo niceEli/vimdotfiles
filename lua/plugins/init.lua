@@ -120,6 +120,11 @@ return {
   },
 
   {
+    "windwp/nvim-ts-autotag",
+    lazy = false,
+  },
+
+  {
     "toppair/peek.nvim",
     build = "deno task --quiet build:fast",
     keys = {

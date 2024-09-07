@@ -25,5 +25,6 @@ local M = {
   "python-lsp-server",
   "ast-grep",
   "markuplint",
+  "astro-language-server",
 }
 return M
