@@ -10,6 +10,7 @@ return {
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
+    version = "0ef64599b8aa0187ee5f6d92cb39c951f348f041",
     config = function()
       require "configs.lspconfig"
     end,
