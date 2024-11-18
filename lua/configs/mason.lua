@@ -26,5 +26,7 @@ local M = {
   "ast-grep",
   "markuplint",
   "astro-language-server",
+  "gdtoolkit",
+  "omnisharp",
 }
 return M

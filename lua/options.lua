@@ -11,3 +11,8 @@ end
 
 -- Set color columns at 72, 80, and 120 characters
 vim.opt.colorcolumn = "72,80,120"
+
+-- Hide the command bar
+--vim.opt.cmdheight = 0
+
+vim.opt.termguicolors = true

@@ -1,0 +1,13 @@
+{
+  "Lua.diagnostics.disable": [
+    "undefined-global"
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.noFolderForeground": "#ffffff",
+    "statusBar.noFolderBackground": "#01182e",
+    "statusBar.debuggingBackground": "#CC0066",
+    "activityBar.background": "#5A1021",
+    "titleBar.activeBackground": "#7E172E",
+    "titleBar.activeForeground": "#FEFBFC"
+  }
+}

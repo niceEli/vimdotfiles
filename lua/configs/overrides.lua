@@ -3,6 +3,9 @@ local M = {}
 -- git support in nvimtree
 M.nvimtree = {
   hijack_cursor = true,
+  view = {
+    side = "right"
+  },
   filters = {
     dotfiles = false,
     git_ignored = false,

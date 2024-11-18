@@ -15,7 +15,7 @@ return {
       require "configs.lspconfig"
     end,
   },
-  
+
   {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
     lazy = false,
@@ -27,10 +27,22 @@ return {
 
   {
     "github/copilot.vim",
-    
+
     lazy = false
   },
-  
+
+  {
+    "editorconfig/editorconfig-vim",
+
+    lazy = false
+  },
+
+  {
+    "ahmedkhalf/project.nvim",
+
+    lazy = false
+  },
+
   {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
@@ -62,41 +74,41 @@ return {
     ---@param opts cn.ConfigSchema
     opts = { [[ your custom config here ]] }
   },
-  
-  {
-    "folke/noice.nvim",
-    version = "4.4.7",
-    event = "VeryLazy",
-    opts = {
-      lsp = {
-        signature = {
-          enabled = false
-        }
-      },
-      cmdline = {
-        view = "cmdline", 
-      },
-    },
-    dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      "MunifTanjim/nui.nvim",
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
-      }
-  },
+
+  --{
+  --  "folke/noice.nvim",
+  --  version = "4.4.7",
+  --  event = "VeryLazy",
+  --  opts = {
+  --    lsp = {
+  --      signature = {
+  --        enabled = false
+  --      }
+  --    },
+  --    cmdline = {
+  --      view = "cmdline",
+  --    },
+  --  },
+  --  dependencies = {
+  --    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+  --    "MunifTanjim/nui.nvim",
+  --    -- OPTIONAL:
+  --    --   `nvim-notify` is only needed, if you want to use the notification view.
+  --    --   If not available, we use `mini` as the fallback
+  --    "rcarriga/nvim-notify",
+  --  }
+  --},
 
   {
     "tiagovla/scope.nvim",
     lazy = false,
     hooks = {
       pre_tab_leave = function()
-        vim.api.nvim_exec_autocmds('User', {pattern = 'ScopeTabLeavePre'})
+        vim.api.nvim_exec_autocmds('User', { pattern = 'ScopeTabLeavePre' })
       end,
-  
+
       post_tab_enter = function()
-        vim.api.nvim_exec_autocmds('User', {pattern = 'ScopeTabEnterPost'})
+        vim.api.nvim_exec_autocmds('User', { pattern = 'ScopeTabEnterPost' })
       end,
     },
   },
@@ -105,7 +117,7 @@ return {
   {
     'romgrk/barbar.nvim',
     dependencies = {
-      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+      'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
       'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
     },
     init = function() vim.g.barbar_auto_setup = false end,
@@ -131,18 +143,25 @@ return {
     keys = {
       {
         "<leader>op",
-          function()
-            local peek = require("peek")
-              if peek.is_open() then
+        function()
+          local peek = require("peek")
+          if peek.is_open() then
             peek.close()
-            else
+          else
             peek.open()
-            end
+          end
         end,
         desc = "Peek (Markdown Preview)",
       },
-  },
+    },
     opts = { theme = "dark", app = "browser" },
+  },
+
+  { "nvchad/volt", lazy = true },
+  { "nvchad/menu", lazy = true },
+  {
+    "nvchad/minty",
+    cmd = { "Shades", "Huefy" },
   },
 
   "NvChad/nvcommunity",
@@ -151,16 +170,16 @@ return {
   { import = "nvcommunity.git.lazygit" },
   { import = "nvcommunity.tools.telescope-fzf-native" },
   { import = "nvcommunity.diagnostics.errorlens" },
-  { import = "nvcommunity.editor.autosave" },
   { import = "nvcommunity.lsp.mason-lspconfig" },
   { import = "nvcommunity.lsp.barbecue" },
-  
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-      "vim", "lua", "vimdoc",
-      "html", "css"
+        "vim", "lua", "vimdoc",
+        "html", "css", "regex",
+        "bash", "markdown", "markdown_inline"
       },
     },
   },

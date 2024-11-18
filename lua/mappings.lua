@@ -43,15 +43,32 @@ map('n', '<A-c>', '<Cmd>BufferClose<CR>', { noremap = true, silent = true, desc 
 -- Magic buffer-picking mode
 map('n', '<leader>Bp', '<Cmd>BufferPick<CR>', { noremap = true, silent = true, desc = 'Quick Switch Buffer' })
 -- Sort automatically by...
-map('n', '<leader>Bb', '<Cmd>BufferOrderByBufferNumber<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Number' })
+map('n', '<leader>Bb', '<Cmd>BufferOrderByBufferNumber<CR>',
+  { noremap = true, silent = true, desc = 'Sort Buffers By Number' })
 map('n', '<leader>Bn', '<Cmd>BufferOrderByName<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Name' })
 map('n', '<leader>Bd', '<Cmd>BufferOrderByDirectory<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Dir' })
 map('n', '<leader>Bl', '<Cmd>BufferOrderByLanguage<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Lang' })
-map('n', '<leader>Bw', '<Cmd>BufferOrderByWindowNumber<CR>', { noremap = true, silent = true, desc = 'Sort Buffers By Window Number' })
+map('n', '<leader>Bw', '<Cmd>BufferOrderByWindowNumber<CR>',
+  { noremap = true, silent = true, desc = 'Sort Buffers By Window Number' })
 
 map('n', '<leader>lg', '<Cmd>LazyGit<CR>', { noremap = true, silent = true, desc = 'LazyGit' })
 
 map('v', '<leader>ss', '<Cmd>CarbonNow<CR>', { noremap = true, silent = true, desc = 'Screenshot Code' })
+
+map('n', '<leader>ow', '<Cmd>Telescope projects<CR>', { noremap = true, silent = true, desc = 'Open Project/Workspace' })
+
+-- Keyboard users
+map("n", "<C-t>", function()
+  require("menu").open("default")
+end, {})
+
+-- mouse users + nvimtree users!
+map("n", "<RightMouse>", function()
+  vim.cmd.exec '"normal! \\<RightMouse>"'
+
+  local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+  require("menu").open(options, { mouse = true })
+end, {})
 
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
@@ -59,8 +76,7 @@ map('v', '<leader>ss', '<Cmd>CarbonNow<CR>', { noremap = true, silent = true, de
 
 -- copilot using enter key
 
-vim.keymap.set('i', '<Right>', 'copilot#Accept("\\<Right>")', {
+map('i', '<Right>', 'copilot#Accept("\\<Right>")', {
   expr = true,
   replace_keycodes = false
 })
-
